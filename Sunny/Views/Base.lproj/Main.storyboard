@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sunny" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Sgb-s6-8RB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Gey-LG-YrL">
+                                <rect key="frame" x="286" y="792" width="98" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Город" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xb7-gC-7dA">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="40"/>
+                                        <color key="tintColor" name="Color"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="40" placeholderIntrinsicHeight="40" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o4Y-e0-0cC">
+                                        <rect key="frame" x="58" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="lVe-CS-rHe"/>
+                                            <constraint firstAttribute="height" constant="40" id="yo2-gh-q3q"/>
+                                        </constraints>
+                                        <color key="tintColor" name="Color"/>
+                                        <state key="normal" image="magnifyingglass.circle.fill" catalog="system">
+                                            <color key="titleColor" name="Color"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="searchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aEY-w1-KfO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nqI-nj-7h6">
+                                <rect key="frame" x="103.5" y="74" width="207.5" height="268.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="150" image="cloud.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="XWR-b0-xSu">
+                                        <rect key="frame" x="28.5" y="3" width="150" height="144.5"/>
+                                        <color key="tintColor" name="Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="K8x-j8-l6i"/>
+                                            <constraint firstAttribute="height" constant="150" id="oBe-up-nuN"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 С" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P54-du-kfy">
+                                        <rect key="frame" x="58.5" y="170" width="90.5" height="58.5"/>
+                                        <color key="tintColor" name="Color"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="50"/>
+                                        <color key="textColor" name="Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Zyq-P2-g56">
+                                        <rect key="frame" x="0.0" y="248.5" width="207.5" height="20"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ощущается как" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rc4-si-DsG">
+                                                <rect key="frame" x="0.0" y="0.0" width="136" height="20"/>
+                                                <color key="tintColor" name="Color"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                                <color key="textColor" name="Color"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-273 С" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qq-52-Tev">
+                                                <rect key="frame" x="146" y="0.0" width="61.5" height="20"/>
+                                                <color key="tintColor" name="Color"/>
+                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                <color key="textColor" name="Color"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nqI-nj-7h6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="3Cx-Zh-zbJ"/>
+                            <constraint firstItem="Sgb-s6-8RB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8yg-C0-3if"/>
+                            <constraint firstItem="nqI-nj-7h6" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110.5" id="JSa-Qf-RGg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gey-LG-YrL" secondAttribute="bottom" constant="30" id="LOm-zU-kx5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gey-LG-YrL" secondAttribute="trailing" constant="30" id="Q3r-gL-CgR"/>
+                            <constraint firstItem="Sgb-s6-8RB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iSX-Sh-LJJ"/>
+                            <constraint firstItem="Sgb-s6-8RB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qEm-Kf-aEt"/>
+                            <constraint firstAttribute="bottom" secondItem="Sgb-s6-8RB" secondAttribute="bottom" id="tN7-fI-fDS"/>
+                            <constraint firstItem="nqI-nj-7h6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yal-cK-ldJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="Xb7-gC-7dA" id="41a-78-BXa"/>
+                        <outlet property="feelsLikeTemperatureLabel" destination="7qq-52-Tev" id="KP7-GG-rSn"/>
+                        <outlet property="temperatureLabel" destination="P54-du-kfy" id="hje-da-r0m"/>
+                        <outlet property="weatherIconImageView" destination="XWR-b0-xSu" id="5LN-hS-5Pl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="375" height="667"/>
+        <image name="cloud.fill" catalog="system" width="128" height="84"/>
+        <image name="magnifyingglass.circle.fill" catalog="system" width="128" height="121"/>
+        <namedColor name="Color">
+            <color red="1" green="1" blue="0.89999997615814209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
